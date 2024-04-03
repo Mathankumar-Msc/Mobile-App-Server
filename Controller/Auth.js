@@ -164,7 +164,10 @@ const GetUserdata = async (req, res) => {
       res.status(500).json({ message: "Internal server error" });
   }
 };
+const Home = (req, res) => {
+  res.json({ message: "success" });
+}
   
 
 
-module.exports={Signup,Login,BasicInformation,Symptoms,GetUserdata}
+module.exports={Signup,Login,BasicInformation,Symptoms,GetUserdata,Home}
